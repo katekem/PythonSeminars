@@ -93,14 +93,54 @@
 # # Задача: Напишите программу, в которой пользователь будет задавать две строки, 
 # # а программа - определять количество вхождений одной строки в другой.
 # # со строками через срезы
-text = 'Первое число - 1, второе число - 2, сумма 3 чи'
-sub_text = input('Введите подстроку: ')
-## print(text.count(sub_text))
-count = 0
-for i in range(len(text)):
-    if text[i:i+len(sub_text)] == sub_text:
-        count += 1
-print(f'Подстрока {sub_text} встречается {count} раз(а)')
+# text = 'Первое число - 1, второе число - 2, сумма 3 чи'
+# sub_text = input('Введите подстроку: ')
+# ## print(text.count(sub_text))
+# count = 0
+# for i in range(len(text)):
+#     if text[i:i+len(sub_text)] == sub_text:
+#         count += 1
+# print(f'Подстрока {sub_text} встречается {count} раз(а)')
+
+# # Реверс строки
+# string = 'kjhgflkj'
+# print(string[::-1])
+
+# my_list = [0]
+# for i in range(5):
+#     my_list.append(i)
+#     my_list.insert(0, -i)
+# print(my_list)
+
+
+# # Match - Case
+# day = 2
+# match day:
+#     case 1 | 2 | 3:       # когда несколько вариантов
+#         print('Monday')
+#     case 2:
+#         print('Tuesday')
+#     case 3:
+#         print('Wednesday')
+#     case 4:
+#         print('Thursday')
+#     case 5:
+#         print('Friday')
+#     case 6:
+#         print('Saturaday')
+#     case 7:
+#         print('Sunday')
+#     case _:
+#         print('The rest')
+
+
+for x in [True, False]:
+    for y in [True, False]:
+        for z in [True, False]:
+            first = (not(x or y or z))
+            second = (not(x) and not(y) and not(z))
+            print(f'{x:^7} {y:^7} {z:^7} -> {first:^7} | {second:^7} -> {(first == second):^7}')
+
 
 
 
