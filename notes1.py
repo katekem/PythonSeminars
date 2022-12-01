@@ -30,6 +30,7 @@ def shuffle_my_list(sm_list):
         random_list.append(gen_index)
     return new_list
   
+    
 
 import random
 def shuffle_my_list(smlist):
